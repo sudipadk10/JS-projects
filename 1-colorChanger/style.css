@@ -1,0 +1,39 @@
+body{
+    align-items: center;
+}
+span{
+    display: block;
+}
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 100;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+  }
+  #red {
+    background: red;
+    margin: 5px;
+  }
+  
+  #green {
+    background: green;
+    margin: 5px;
+  }
+  #blue {
+    background: blue;
+    margin: 5px;
+  }
+  #yellow {
+    background: yellow;
+    margin: 5px;
+  }
