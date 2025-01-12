@@ -1,0 +1,33 @@
+
+body {
+       display: flex; /* Enables Flexbox */
+       flex-direction: column;
+       justify-content: center; /* Centers horizontally */
+       align-items: center; /* Centers vertically */
+       height: 100vh; /* Makes the body take up the full viewport height */
+       margin: 0; /* Removes default margin */
+       
+   }
+   h1 {
+       text-align: center; /* Centers text horizontally */
+   }
+   table {
+    border-collapse: collapse; /* Ensures borders are merged into a single border */
+    width: 50%; /* Sets the table width to 50% of its container */
+    margin: 20px auto; /* Centers the table horizontally and adds margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    background-color: #ffffff; /* Sets a white background */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Adds a light border to table cells */
+    padding: 12px; /* Adds padding inside cells */
+    text-align: center; /* Centers text inside cells */
+}
+
+th {
+    background-color: #f4f4f4; /* Adds a light gray background to headers */
+    font-weight: bold; /* Makes header text bold */
+    color: #333; /* Sets a dark gray color for header text */
+}
+
