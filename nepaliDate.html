@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेपाली मिति र समय</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>नेपाली मिति र समय</h1>
+        <p id="nepali-date">मिति: लोड हुँदैछ...</p>
+        <p id="nepali-time">समय: लोड हुँदैछ...</p>
+    </div>
+
+    <script>
+        // Function to get the Nepali date and time
+        function updateNepaliDateTime() {
+            const now = new Date();
+            const nepaliMonths = ["बैशाख", "जेठ", "असार", "श्रावण", "भदौ", "असोज", "कार्तिक", "मंसिर", "पुष", "माघ", "फाल्गुण", "चैत्र"];
+
+            // Example conversion from AD to BS (custom logic may vary based on specific libraries)
+            const nepaliYear = now.getFullYear() + 57; // Approximation
+            const nepaliMonth = nepaliMonths[now.getMonth()];
+            const nepaliDay = now.getDate();
+
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            const nepaliDate = `${nepaliDay} ${nepaliMonth}, ${nepaliYear}`;
+            const nepaliTime = `${hours}:${minutes}:${seconds}`;
+
+            document.getElementById('nepali-date').textContent = `मिति: ${nepaliDate}`;
+            document.getElementById('nepali-time').textContent = `समय: ${nepaliTime}`;
+        }
+
+        // Update every second
+        setInterval(updateNepaliDateTime, 1000);
+    </script>
+</body>
+</html>
