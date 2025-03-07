@@ -1,0 +1,87 @@
+body{
+    background-color: black;
+}
+nav{
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height:35px; /* Adjust height as needed */
+    background: orange /* Just for visibility */
+    
+  }
+  
+#sender{
+    background-color: white;
+    /* width: 30%; */
+    height:94vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.top{
+    background: blue;
+    display: flex;
+}
+span.profile{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid rgb(7, 255, 7);
+    width: 10px;
+    height: 10px; 
+
+}
+.name{
+    color: white;
+    font-size: 20px;
+    height: 50%;
+
+}
+.status{
+    height: 50%;
+    font-size: 15px;
+    color: rgb(2, 255, 2);
+}
+
+.nameAndStatus{
+    margin-left: 10px;
+}
+.chat{
+    height: 90%;
+    
+}
+#chat1{
+    /* background-color: blue; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.message{
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 2px;
+    word-wrap: break-word;
+    max-width: 60%;
+
+}
+.send{
+    background-color: blue;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.message-box {
+    flex: 1; /* Take up available space */
+    /* border: none; */
+    margin:  1px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    background: white;
+    margin-right: 10px;
+}
