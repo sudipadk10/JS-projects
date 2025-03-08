@@ -9,8 +9,13 @@
 <body>
     <nav>
     <H1 class="nav">Chat App with End to End Encryption</H1>
+    
     </nav>
-    <div id="sender">
+
+    <div class="body">
+
+        <!-- sender -->
+    <div id="sender" class="chatPerson">
         <div class="top">
             <button style="background: none; border: none; cursor: pointer;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,12 +35,83 @@
             
         </div>
         <div class="text-area">
-            <input type="textarea" id="textInput" class="message-box" placeholder="Type a message...">
+            <input type="textarea" id="senderInput" class="message-box" placeholder="Type a message...">
             <button onclick="displayText()" class="send">Send</button>
         </div>
 
+    </div> 
+    <div class="keys">
+        <div class="keyTitle">Key</div>
+
+      <input id="0" type="number" value="0" min="0" max="99">
+      <input id="1" type="number" value="0" min="0" max="99">
+      <input id="2" type="number" value="0" min="0" max="99">
+        
     </div>
 
+    <!-- hacker  -->
+    <div id="hacker" class="chatPerson">
+        <div class="top">
+            <button style="background: none; border: none; cursor: pointer;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 18l-6-6 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            <span class="profile"></span>
+
+            <div class="nameAndStatus">
+                <div class="name">Hacker</div> 
+            <div class="status">Online</div>
+            </div>
+
+        </div>
+        <div class="chat">
+            <div id="chat2"></div>
+            
+        </div>
+        <div class="text-area">
+            <input type="textarea" id="hackerInput" class="message-box" placeholder="Type a message...">
+            <button onclick="displayText()" class="send">Send</button>
+        </div>
+
+    </div> 
+    <div class="keys">
+        <div class="keyTitle">Key</div>
+
+      <input id="0" type="number" value="0" min="0" max="99">
+      <input id="1" type="number" value="0" min="0" max="99">
+      <input id="2" type="number" value="0" min="0" max="99">
+        
+    </div>
+     <!-- reciever---->
+    <div id="reciever" class="chatPerson">
+        <div class="top">
+            <button style="background: none; border: none; cursor: pointer;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 18l-6-6 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            <span class="profile"></span>
+
+            <div class="nameAndStatus">
+                <div class="name">John</div> 
+            <div class="status">Online</div>
+            </div>
+
+        </div>
+        <div class="chat">
+            <div id="chat3"></div>
+            
+        </div>
+        <div class="text-area">
+            <input type="textarea" id="recieverInput" class="message-box" placeholder="Type a message...">
+            <button onclick="displayText()" class="send">Send</button>
+        </div>
+        
+
+    </div> 
+
+</div> // .body div 
 
 </body>
 <script src="script.js">

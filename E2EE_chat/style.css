@@ -10,10 +10,14 @@ nav{
     background: orange /* Just for visibility */
     
   }
-  
-#sender{
-    background-color: white;
-    /* width: 30%; */
+.body{
+    display: flex;
+}  
+
+.chatPerson{
+
+    background-color: pink;
+    width: 26%;
     height:94vh;
     display: flex;
     flex-direction: column;
@@ -59,6 +63,13 @@ span.profile{
     flex-direction: column;
     align-items: end;
 }
+#chat3{
+    /* background-color: blue; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 .message{
     background-color: blue;
     padding: 10px 15px;
@@ -68,6 +79,16 @@ span.profile{
     max-width: 60%;
 
 }
+.message2{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 2px;
+    word-wrap: break-word;
+    max-width: 60%;
+    display: inline-block;
+}
+
 .send{
     background-color: blue;
     border-radius: 20px;
@@ -84,4 +105,20 @@ span.profile{
     font-size: 16px;
     background: white;
     margin-right: 10px;
+}
+.keys{
+    width: 11%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    
+}
+.keyTitle{
+    font-size: 25px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    
 }
