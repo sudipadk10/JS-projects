@@ -61,14 +61,19 @@ span.profile{
     color: black;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    /* align-items: end; */
 }
-#chat3{
+#chat3,#chat2{
     /* background-color: blue; */
     color: black;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    /* align-items: start; */
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 .message{
     background-color: blue;
@@ -78,6 +83,11 @@ span.profile{
     word-wrap: break-word;
     max-width: 60%;
 
+}
+.msg2{
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
 }
 .message2{
     background-color: white;
